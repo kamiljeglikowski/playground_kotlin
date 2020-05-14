@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         // As you can see, this variable value was assigned and you couldn't do this again
         someNotAssignedValue = "piwnicaprogramisty.pl"
-
     }
 
     companion object {
