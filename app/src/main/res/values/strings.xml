@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Playground</string>
+
+    <string name="intents_title">Explicit vs Implicit intents</string>
+    <string name="intents_button_open_explicit_intent">Explicit intent</string>
+    <string name="intents_button_open_implicit_intent">Implicit intent</string>
+    <string name="explicit_intent_welcome_text">This is new activity</string>
 </resources>
