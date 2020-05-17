@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.piwnicaprogramisty.playground.R
 
-class IntentsActivity: AppCompatActivity() {
+class IntentsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,15 +22,19 @@ class IntentsActivity: AppCompatActivity() {
         btnOpenImplicit.setOnClickListener { openImplicitIntent() }
     }
 
-    fun openExplicitIntent(){
-        val intent = Intent(this, ExplicitIntentActivity::class.java)
+    fun openExplicitIntent() {
+        val intent = Intent(
+            this,
+            ExplicitIntentActivity::class.java
+        )
+
         startActivity(intent)
     }
 
-    fun openImplicitIntent(){
+    fun openImplicitIntent() {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"))
 
-        if (intent.resolveActivity(packageManager) != null){
+        if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)
         }
     }
