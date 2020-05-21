@@ -32,8 +32,8 @@ class MovableContentActivity : AppCompatActivity() {
             MotionEvent.ACTION_DOWN -> {
                 dX = view.x - event.rawX
                 dY = view.y - event.rawY
-
             }
+
             MotionEvent.ACTION_MOVE -> {
                 view.animate()
                     .x(event.rawX + dX)
