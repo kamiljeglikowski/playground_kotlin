@@ -1,7 +1,6 @@
 package com.piwnicaprogramisty.playground.movable_view
 
 import android.os.Bundle
-import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageView
@@ -33,13 +32,9 @@ class MovableContentActivity : AppCompatActivity() {
             MotionEvent.ACTION_DOWN -> {
                 dX = view.x - event.rawX
                 dY = view.y - event.rawY
-                Log.e("zxc", "x " + dX + " " + view.x + " " + event.rawX)
-                Log.e("zxc", "y " + dY + " " + view.y + " " + event.rawY)
 
             }
             MotionEvent.ACTION_MOVE -> {
-                Log.e("zxc", "x"  + (event.rawX + dX))
-                Log.e("zxc", "y " + (event.rawY + dY))
                 view.animate()
                     .x(event.rawX + dX)
                     .y(event.rawY + dY)
