@@ -19,6 +19,7 @@
 
         <activity android:name=".intents.ExplicitIntentActivity"/>
         <activity android:name=".intents.IntentsActivity"/>
+        <activity android:name=".movable_view.MovableContentActivity"/>
     </application>
 
 </manifest>
